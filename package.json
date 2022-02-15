@@ -1,0 +1,30 @@
+{
+  "name": "blok-tech",
+  "version": "1.0.0",
+  "description": "huilen",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelizerbas/blok-tech.git"
+  },
+  "keywords": [
+    "matching",
+    "filteren"
+  ],
+  "author": "Yeliz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yelizerbas/blok-tech/issues"
+  },
+  "homepage": "https://github.com/yelizerbas/blok-tech#readme",
+  "dependencies": {
+    "camelcase": "^6.3.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
