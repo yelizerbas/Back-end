@@ -1,91 +1,61 @@
 [{
-    "name": {
-        "first": "Yeliz"
-    },
+    "name": "Yeliz",
     "doelen": "Vet verliezen"
 },
 {
-    "name": {
-        "first": "Timo"
-    },
+    "name": "Timo",
     "doelen": "Vet verliezen"
 },
 {
-    "name": {
-        "first": "Dennis"
-    },
+    "name":  "Dennis",
     "doelen": "Vet verliezen"
 },
 {
-    "name": {
-        "first": "Emma"
-    },
+    "name":"Emma",
     "doelen": "Vet verliezen"
 },
 {
-    "name": {
-        "first": "Bas"
-    },
+    "name": "Bas",
     "doelen": "Spieren opbouwen"
 },
 {
-    "name": {
-        "first": "Mike"
-    },
+    "name": "Mike",
     "doelen": "Spieren opbouwen"
 },
 {
-    "name": {
-        "first": "Charlie"
-    },
+    "name": "Charlie",
     "doelen": "Spieren opbouwen"
 },
 {
-    "name": {
-        "first": "Amber"
-    },
+    "name":  "Amber",
     "doelen": "Spieren opbouwen"
 },
 {
-    "name": {
-        "first": "Niki"
-    },
+    "name": "Niki",
     "doelen": "Aankomen"
 },
 {
-    "name": {
-        "first": "Tim"
-    },
+    "name": "Tim",
     "doelen": "Aankomen"
 },
 {
-    "name": {
-        "first": "Stefan"
-    },
+    "name": "Stefan",
     "doelen": "Aankomen"
 },
 {
-    "name": {
-        "first": "Salma"
-    },
+    "name": "Salma",
     "doelen": "Conditie verbeteren"
 },
 {
-    "name": {
-        "first": "Anne"
-    },
+    "name": "Anne",
     "doelen": "Conditie verbeteren"
 },
 {
-    "name": {
-        "first": "Esra"
-    },
+    "name": "Esra",
     "doelen": "Conditie verbeteren"
 },
 {
-    "name": {
-        "first": "Rogier"
-    },
+    "name":  "Rogier",
     "doelen": "Conditie verbeteren"
 }
 ]

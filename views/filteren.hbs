@@ -7,23 +7,36 @@
         </form>
     </div> 
 
-    <form action="/", method="POST">
-    <input type="radio" name="knop">
-    <label for="vet"> Vet verliezen</label>
+    <form action="/formulier", method="POST">
+    <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen">
+    <label for="Vet verliezen"> Vet verliezen</label>
 
-    <input type="radio" name="knop">
-    <label for="spieren"> Spieren opbouwen</label>
+    <input type="radio" name="doelen" value="Spieren opbouwen" id="Spieren opbouwen">
+    <label for="Spieren opbouwen"> Spieren opbouwen</label>
 
-    <input type="radio" name="knop">
-    <label for="aankomen"> Aankomen</label>
+    <input type="radio" name="doelen" value="Aankomen" id="Aankomen">
+    <label for="Aankomen"> Aankomen</label>
     
-    <input type="radio" name="knop">
-    <label for="cardio">Cardio verbeteren</label>
+    <input type="radio" name="doelen" value="Conditie verbeteren" id="Conditie verbeteren">
+    <label for="Conditie verbeteren">Conditie verbeteren</label>
+    <button type="submit"> Filter!</button>
     </form>
 
     <h1>Vind jouw Gymbuddy</h1>
-
+{{#each persoon}}
     <div>
+        <h2>{{this.name}}</h2>
+        <p>{{this.doelen}}</p>
+        <form action="/delete" method="DELETE">
+        <input  name="gymbuddy" type="hidden" value="{{this._id}}" />
+        <button type="submit"> delete</button>
+        </form>
+    </div>
+
+    {{/each}}
+
+
+    {{!-- <div>
         <img src="" alt="">
         <h2>Yeliz, 19</h2>
         <p>Vet verliezen</p>
@@ -112,5 +125,5 @@
         <img src="" alt="">
         <h2>Rogier, 23</h2>
         <p>Conditie verbeteren</p>
-    </div>
+    </div> --}}
 </body>
