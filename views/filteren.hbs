@@ -27,9 +27,9 @@
     <div>
         <h2>{{this.name}}</h2>
         <p>{{this.doelen}}</p>
-        <form action="/delete" method="DELETE">
-        <input  name="gymbuddy" type="hidden" value="{{this._id}}" />
-        <button type="submit"> delete</button>
+        <form action="/delete" method="post">
+        <input  name="gymbuddy" type="hidden" value="{{this.name}}"/>
+        <button type="submit">Verwijder</button>
         </form>
     </div>
 

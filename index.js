@@ -14,7 +14,8 @@ const upload = multer();
 const {utilsDB}  = require('./utils/db')
 
 require('dotenv').config();
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, Db } = require('mongodb');
+const { runInNewContext } = require('vm');
 const url = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@gymbuddy.ejaie.mongodb.net/gymbuddy?retryWrites=true&w=majority`; 
 const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
@@ -56,11 +57,16 @@ app.post("/formulier", async(req, res) => {
 });
 
 
-app.delete("/delete", async(req, res) => {
+app.post("/delete", async(req, res) => {
 
-  const persoon = await utilsDB(client); 
+  await client.connect()
 
-  console.log(req.body);
+  console.log(req.body)
+  client.db('gymbuddy-db').collection('users').deleteOne({ name: req.body.gymbuddy }).then(buddy => {
+    console.log(req.body.gymbuddy)
+  })
+
+  res.redirect('/')
 });
 
 
