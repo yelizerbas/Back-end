@@ -1,61 +1,76 @@
 [{
     "name": "Yeliz",
+    "leeftijd": "19",
     "doelen": "Vet verliezen"
 },
 {
     "name": "Timo",
+    "leeftijd": "32",
     "doelen": "Vet verliezen"
 },
 {
     "name":  "Dennis",
+    "leeftijd": "24",
     "doelen": "Vet verliezen"
 },
 {
     "name":"Emma",
+    "leeftijd": "21",
     "doelen": "Vet verliezen"
 },
 {
     "name": "Bas",
+    "leeftijd": "22",
     "doelen": "Spieren opbouwen"
 },
 {
     "name": "Mike",
+    "leeftijd": "39",
     "doelen": "Spieren opbouwen"
 },
 {
     "name": "Charlie",
+    "leeftijd": "28",
     "doelen": "Spieren opbouwen"
 },
 {
     "name":  "Amber",
+    "leeftijd": "25",
     "doelen": "Spieren opbouwen"
 },
 {
     "name": "Niki",
+    "leeftijd": "18",
     "doelen": "Aankomen"
 },
 {
     "name": "Tim",
+    "leeftijd": "27",
     "doelen": "Aankomen"
 },
 {
     "name": "Stefan",
+    "leeftijd": "21",
     "doelen": "Aankomen"
 },
 {
     "name": "Salma",
+    "leeftijd": "19",
     "doelen": "Conditie verbeteren"
 },
 {
     "name": "Anne",
+    "leeftijd": "34",
     "doelen": "Conditie verbeteren"
 },
 {
     "name": "Esra",
+    "leeftijd": "29",
     "doelen": "Conditie verbeteren"
 },
 {
     "name":  "Rogier",
+    "leeftijd": "20",
     "doelen": "Conditie verbeteren"
 }
 ]

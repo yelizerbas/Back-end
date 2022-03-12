@@ -1,11 +1,12 @@
 <body>
-    <div>
+    {{!-- <div>
         <form action="/", method="POST">
             <label for="naam"> Naam:</label>
             <input type="text" name="naam" value="">
             <input type="submit"> 
         </form>
-    </div> 
+    </div>  --}}
+    <h1>Vind jouw Gymbuddy</h1>
 
     <form action="/formulier", method="POST">
     <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen">
@@ -19,13 +20,13 @@
     
     <input type="radio" name="doelen" value="Conditie verbeteren" id="Conditie verbeteren">
     <label for="Conditie verbeteren">Conditie verbeteren</label>
-    <button type="submit"> Filter!</button>
+    <button type="submit"> Filter</button>
     </form>
 
-    <h1>Vind jouw Gymbuddy</h1>
+    
 {{#each persoon}}
     <div>
-        <h2>{{this.name}}</h2>
+        <h2>{{this.name}}, {{this.leeftijd}}</h2>
         <p>{{this.doelen}}</p>
         <form action="/delete" method="post">
         <input  name="gymbuddy" type="hidden" value="{{this.name}}"/>

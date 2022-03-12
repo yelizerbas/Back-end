@@ -1,13 +1,12 @@
-input{
-    border-radius: 5px;
-    color: purple;
-    background-color: white;
+:root{
+    --oranje: #EF8031;
+    --blauw: #00A0E2;
+    --zwart: #000000;
+    --wit: #ffffff;
 }
 
-button{
-    color: white;
-    background-color: purple;
-}
+
+
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -15,9 +14,34 @@ h1{
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1em;
+    font-size: 1.3em;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    border: var(--blauw);
+}
+
+button{
+    color: var(--wit);
+    background-color: var(--oranje);
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .3em;
+    font-size: 1em ;
+}
+button:hover{
+    color: var(--wit);
+    background-color: var(--blauw);
+
 }
 
