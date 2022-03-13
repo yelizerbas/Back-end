@@ -20,7 +20,7 @@
 {{#each persoon}}
 <main>
     <div>
-        {{!-- <img src={{this.foto}} alt="Foto van persoon" /> --}}
+        <img src={{this.imgSrc}} alt="Foto van persoon"/>
         <h2>{{this.name}}, {{this.leeftijd}}</h2>
         <p>{{this.doelen}}</p>
         <form action="/delete" method="post">

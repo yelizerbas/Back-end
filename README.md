@@ -9,28 +9,35 @@ Naar de sportschool gaan is hartstikke leuk, alleen het is natuurlijk leuker als
 Voordat je aan de slag kunt met mijn project zijn er eerst een paar kleine stappen. Zorg er voor dat je npm en nodejs al gedownload hebt. Heb je dat niet leg ik in het tweede deel uit hoe dat moet.
 1. Ga naar jouw terminal en zorg er voor dat je op de juiste plek bent waar je dit project wilt opslaan.
 2. clone mijn repository. 
+  ```
   $ git clone https://github.com/yelizerbas/blok-tech
+  ```
 3. Nu dit is gelukt is er nog maar 1 laaste stap. Het installeren. Instaleer het door de volgende regel uit te voeren;
+  ```
   $ npm install
+  ```
 4. Als allerlaatste typ je het volgende in jouw terminal om het project te gebruiken:
+  ```
   $ npm start
+  ```
 Nu kun je mijn prooject bekijken op jouw eigen localhost:3000. Dit typ je in in de browser. Let wel op, dit gaat elke keer als je de code wegdrukt weer uit, dus je moet dan opnieuw verbinding maken met 
-npm start
-
+  ```
+  $ npm start
+  ```
 ### node installeren
 Mocht je geen npm of nodejs hebben moet je dit eerst hebben. Dit download je heel simpel. Zet in je terminal het volgende om het te installeren.
-
+```
  $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-
+```
 Dan sluit je je terminal af en doe je het volgende;
-
+```
 $ nvm install stable
-
+```
 Als het goed is gelukt kun je de versie van je npm en node printen met dit;
-
+```
 $ node -v # 
 $ npm -v # 
-
+```
 Bij de # hoort te staan welke versie jij op jouw computer hebt staan
 
 ## 💅Contributie
