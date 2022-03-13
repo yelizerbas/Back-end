@@ -1,33 +1,35 @@
 <body>
     <h1>Vind jouw Gymbuddy</h1>
-
-    <form id="filter" action="/formulier", method="POST">
-    <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen">
-    <label for="Vet verliezen"> Vet verliezen</label>
-
-    <input type="radio" name="doelen" value="Spieren opbouwen" id="Spieren opbouwen">
-    <label for="Spieren opbouwen"> Spieren opbouwen</label>
-
-    <input type="radio" name="doelen" value="Aankomen" id="Aankomen">
-    <label for="Aankomen"> Aankomen</label>
     
-    <input type="radio" name="doelen" value="Conditie verbeteren" id="Conditie verbeteren">
-    <label for="Conditie verbeteren">Conditie verbeteren</label>
-    <button type="submit"> Filter</button>
-    </form>
+<main>
+    <form id="filter" action="/formulier", method="POST">
+        <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen">
+        <label for="Vet verliezen"> Vet verliezen</label>
 
+        <input type="radio" name="doelen" value="Spieren opbouwen" id="Spieren opbouwen">
+        <label for="Spieren opbouwen"> Spieren opbouwen</label>
+
+        <input type="radio" name="doelen" value="Aankomen" id="Aankomen">
+        <label for="Aankomen"> Aankomen</label>
+    
+        <input type="radio" name="doelen" value="Conditie verbeteren" id="Conditie verbeteren">
+        <label for="Conditie verbeteren">Conditie verbeteren</label>
+
+        <button type="submit"> Filter</button>
+    </form>
+</main>
     
 {{#each persoon}}
-<main>
     <div>
         <img src={{this.imgSrc}} alt="Foto van persoon"/>
         <h2>{{this.name}}, {{this.leeftijd}}</h2>
         <p>{{this.doelen}}</p>
-        <form action="/delete" method="post">
-        <input  name="gymbuddy" type="hidden" value="{{this.name}}"/>
+
+            <form action="/delete" method="post">
+            <input  name="gymbuddy" type="hidden" value="{{this.name}}"/>
+
         <button type="submit">Verwijder</button>
         </form>
     </div>
-</main>
     {{/each}}
 </body>

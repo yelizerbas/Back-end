@@ -20,7 +20,7 @@ Voordat je aan de slag kunt met mijn project zijn er eerst een paar kleine stapp
   ```
   $ npm start
   ```
-Nu kun je mijn prooject bekijken op jouw eigen localhost:3000. Dit typ je in in de browser. Let wel op, dit gaat elke keer als je de code wegdrukt weer uit, dus je moet dan opnieuw verbinding maken met 
+Nu kun je mijn project bekijken op jouw eigen localhost:3000. Dit typ je in in de browser. Let wel op, dit gaat elke keer als je de code wegdrukt weer uit, dus je moet dan opnieuw verbinding maken met 
   ```
   $ npm start
   ```
@@ -40,6 +40,8 @@ $ npm -v #
 ```
 Bij de # hoort te staan welke versie jij op jouw computer hebt staan
 
+## 😵‍💫Database
+Voor dir project is een database gebruikt. Wil je daar meer over te weten komen verwijs ik je graag door naar mijn [wiki](https://github.com/yelizerbas/blok-tech/wiki). Daar staat meer informatie over hoe de database structure in elkaar zit en een afbeelding om het beter te weergeven.
 ## 💅Contributie
 Mocht je iets in de code zien wat beter kan, of leuk is om toe te voegen kun je dit altijd aangeven! Dit kun je doen door een issue op te sturen. Alle hulp wordt gewaardeerd 😌.
 

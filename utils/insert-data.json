@@ -1,65 +1,65 @@
 [{
-    "imgSrc": "static/images/yeliz.jpg",
+    "imgSrc": "images/yeliz.jpg",
     "name": "Yeliz",
     "leeftijd": "19",
     "doelen": "Vet verliezen"
 },
 {
-    "imgSrc": "static/images/dennis.jpeg",
+    "imgSrc": "images/dennis.jpeg",
     "name":  "Dennis",
     "leeftijd": "24",
     "doelen": "Vet verliezen"
 },
 {
-    "imgSrc": "static/images/emma.jpeg",
+    "imgSrc": "images/emma.jpeg",
     "name":"Emma",
     "leeftijd": "21",
     "doelen": "Vet verliezen"
 },
 {
-    "imgSrc": "static/images/bas.jpeg",
+    "imgSrc": "images/bas.jpeg",
     "name": "Bas",
     "leeftijd": "22",
     "doelen": "Spieren opbouwen"
 },
 {
-    "imgSrc": "static/images/mike.png",
+    "imgSrc": "images/mike.png",
     "name": "Mike",
-    "leeftijd": "39",
+    "leeftijd": "27",
     "doelen": "Spieren opbouwen"
 },
 {
-    "imgSrc": "static/images/amber.jpeg",
+    "imgSrc": "images/amber.jpeg",
     "name":  "Amber",
     "leeftijd": "25",
     "doelen": "Spieren opbouwen"
 },
 {
-    "imgSrc": "static/images/niki.jpeg",
+    "imgSrc": "images/niki.jpeg",
     "name": "Niki",
     "leeftijd": "18",
     "doelen": "Aankomen"
 },
 {
-    "imgSrc": "static/images/stefan.jpeg",
+    "imgSrc": "images/stefan.jpeg",
     "name": "Stefan",
     "leeftijd": "19",
     "doelen": "Aankomen"
 },
 {
-    "imgSrc": "static/images/salma.jpeg",
+    "imgSrc": "images/salma.jpeg",
     "name": "Salma",
-    "leeftijd": "19",
+    "leeftijd": "25",
     "doelen": "Conditie verbeteren"
 },
 {
-    "imgSrc": "static/images/lisa.jpeg",
+    "imgSrc": "images/lisa.jpeg",
     "name": "Lisa",
     "leeftijd": "29",
     "doelen": "Conditie verbeteren"
 },
 {
-    "imgSrc": "static/images/rogier.jpeg",
+    "imgSrc": "images/rogier.jpeg",
     "name":  "Rogier",
     "leeftijd": "23",
     "doelen": "Conditie verbeteren"
