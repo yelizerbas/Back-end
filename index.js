@@ -10,7 +10,6 @@ const bodyParser = require('body-parser');
 const multer = require('multer');
 const upload = multer();
 
-// const db  = require('./utils/db');
 const {utilsDB}  = require('./utils/db')
 
 require('dotenv').config();
@@ -20,7 +19,8 @@ const url = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}
 const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 utilsDB(client).then(data => { console.log(data)})
-
+require('dotenv').config();
+app.use(express.static(path.join(__dirname, "static")));
 
 // middleware om omtegaan met incoming data in de body van een request. In dit geval POST
 app.use(express.json());
@@ -45,12 +45,12 @@ app.post("/formulier", async(req, res) => {
   const persoon = await utilsDB(client); 
 
   console.log(req.body);
-  // filter animals
+  // filter personen
   const filteredPersoon = persoon.filter((persoon) => {
-    // stop het item alleen in de array wanneer onderstaande regel 'true' is
+    // stop het item alleen in de array wanneer onderstaande regel 'true' is, dus als de doelen overeen komen met de radiobutton
     return persoon.doelen == req.body.doelen;
   });
-  //render same page with filtered animals
+  //render zelfde pagina, maar met de gefilterde personen
   res.render("filteren", {
     persoon: filteredPersoon
   });
@@ -70,15 +70,7 @@ app.post("/delete", async(req, res) => {
 });
 
 
-
-
-
-require('dotenv').config();
-
-app.use(express.static(path.join(__dirname, "static")));
-
-// db.connectDb();
-
+//hbs connecten
 app.get('/', function(req, res){
    res.render('filteren.hbs');
 });
@@ -97,7 +89,6 @@ app.post('/', function(req, res){
    res.send(req.body);
 });
  
-
 app.engine(
   "hbs",
     exphbs.engine({
@@ -106,29 +97,8 @@ app.engine(
   })
 );
 
-app.set("view engine", "hbs");
 
-
-app.get('/', (req, res) => {
-  res.render("filteren");
-});
-
-
-app.get('/', onhome)
-app.get('/login', onlogin)
-
-
-
-
-
-function onhome(req, res){
-res.send('Hellow World!')
-}
-
-function onlogin(req, res){
-res.send('log in je account dan >:(')
-}
-
+//error scherm
 app.use((req, res, next) => {
   res.status(404).send('geprankt ooooooh')
 })
@@ -136,14 +106,7 @@ app.use((req, res, next) => {
 
 
 
-
-// app.get('', (req,res) => {
-//   res.render('index', {text: 'dit is ejssss'})
-// })
-
-
-
-
+//port connecten
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

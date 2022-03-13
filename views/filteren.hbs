@@ -1,14 +1,7 @@
-<main>
-    {{!-- <div>
-        <form action="/", method="POST">
-            <label for="naam"> Naam:</label>
-            <input type="text" name="naam" value="">
-            <input type="submit"> 
-        </form>
-    </div>  --}}
+<body>
     <h1>Vind jouw Gymbuddy</h1>
 
-    <form action="/formulier", method="POST">
+    <form id="filter" action="/formulier", method="POST">
     <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen">
     <label for="Vet verliezen"> Vet verliezen</label>
 
@@ -25,7 +18,9 @@
 
     
 {{#each persoon}}
+<main>
     <div>
+        {{!-- <img src={{this.foto}} alt="Foto van persoon" /> --}}
         <h2>{{this.name}}, {{this.leeftijd}}</h2>
         <p>{{this.doelen}}</p>
         <form action="/delete" method="post">
@@ -33,6 +28,6 @@
         <button type="submit">Verwijder</button>
         </form>
     </div>
-
-    {{/each}}
 </main>
+    {{/each}}
+</body>
