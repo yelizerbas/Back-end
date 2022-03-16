@@ -30,7 +30,7 @@ app.use(express.urlencoded({
 
 app.get("/", async(req, res) => {
 
-  // data uit de database wat in een array is gestopt wordt nu in de constante dieren gezet.
+  // data uit de database wat in een array is gestopt wordt nu in de constante persoon gezet.
   const persoon = await utilsDB(client); 
 
   // ophalen personen database
