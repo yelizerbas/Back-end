@@ -1,5 +1,6 @@
 <body>
-    <h1>Vind jouw Gymbuddy</h1>
+        <h1>Gymbuddies</h1>
+
     
 <main>
     <form id="filter" action="/formulier", method="POST">
@@ -28,8 +29,12 @@
             <form action="/delete" method="post">
             <input  name="gymbuddy" type="hidden" value="{{this.name}}"/>
 
+        <button> Chatten</button>
         <button type="submit">Verwijder</button>
+    
         </form>
     </div>
     {{/each}}
+
+    <script src="script/script.js"></script>
 </body>
