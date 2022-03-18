@@ -1,55 +1,166 @@
+/********************************************
+*********************************************
+********************RESET********************
+*********************************************
+********************************************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+/********************************************
+*********************************************
+*****************ROOT & BODY*****************
+*********************************************
+********************************************/
 :root{
-    --oranje: #EF8031;
+    --oranje: #FF7602;
     --blauw: #00A0E2;
     --zwart: #000000;
     --wit: #ffffff;
 }
 
-
+body{
+    background-color: var(--wit);
+}
+/********************************************
+*********************************************
+********************TEKST********************
+*********************************************
+********************************************/
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    font-size: 1.5rem;
+    color: var(--zwart);
+    text-transform: uppercase;
+    padding: .8em;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%)
 }
+
 h2{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-top: .5em;
+    color: var(--zwart);
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: var(--blauw);
+    text-align: center;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: -1em;
     font-size: 1.3em;
+    margin-top: .3em;
+    color: var(--zwart);
 }
 
 label{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
+    margin-top: -1em;
+    color: var(--zwart);
 }
 
+/********************************************
+*********************************************
+******************KNOPPEN********************
+*********************************************
+********************************************/
 button{
     color: var(--wit);
     background-color: var(--oranje);
-    border: none;
     font-family: Arial, Helvetica, sans-serif;
-    padding: .3em;
-    font-size: 1em ;
+    font-size: 1em;
+    padding: .4em;
+    border: none;
+    border-radius: 4px;
+    margin-top: .5em;
 }
+
 button:hover{
     color: var(--wit);
     background-color: var(--blauw);
 }
 
+header button{
+    position: absolute;
+    right: 1em;
+    margin-top: -3em;
+    background-color: var(--blauw)
+}
+
+div button:nth-of-type(1){
+    background-color: var(--blauw);
+    margin-right: 8.5em;
+}
+
+input[type=radio]{
+    border: 2px solid var(--oranje);
+    padding: 0.5em;
+    -webkit-appearance: none;
+    margin-right: 1em;
+}
+
+input[type=radio]:checked {
+    background: var(--oranje);
+  }
+
+ main{
+     margin-top: 1em;
+     margin-left: 2em;
+ }
+
+/********************************************
+*********************************************
+*****************ACCOUNTS********************
+*********************************************
+********************************************/
 img{
-    width: 40%;
+    width: 100%;
     height: auto;
 }
 
 div{
-    margin-left: 35%;
-    margin-top: 2%;
+    background-color: var(--wit);
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 5%;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%)
 }
 
-main{
-    display: flex;
-    justify-content: center;
+
+/********************************************
+*********************************************
+*****************DARKMODE********************
+*********************************************
+********************************************/
+:root body.darkmode{
+    --oranje: #FF7602;
+    --blauw: #00A0E2;
+    --zwart: #ffffff;
+    --wit: #2c2c33;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --oranje: #FF7602;
+        --blauw: #00A0E2;
+        --zwart: #ffffff;
+        --wit: #2c2c33;
+
+   }
 }

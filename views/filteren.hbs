@@ -1,9 +1,15 @@
 <body>
-    <h1>Vind jouw Gymbuddy</h1>
+    <header>
+        <h1>Gymbuddies</h1>
+        <button>Darkmode</button>
+    </header>
+        
+
     
 <main>
+    <h3></h3>
     <form id="filter" action="/formulier", method="POST">
-        <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen">
+        <input type="radio" name="doelen" value="Vet verliezen" id="Vet verliezen" required>
         <label for="Vet verliezen"> Vet verliezen</label>
 
         <input type="radio" name="doelen" value="Spieren opbouwen" id="Spieren opbouwen">
@@ -28,8 +34,12 @@
             <form action="/delete" method="post">
             <input  name="gymbuddy" type="hidden" value="{{this.name}}"/>
 
+        <button> Chatten</button>
         <button type="submit">Verwijder</button>
+    
         </form>
     </div>
     {{/each}}
+
+    <script src="script/script.js"></script>
 </body>
