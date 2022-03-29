@@ -51,3 +51,28 @@ const deleteRequired = () => {
 }
 
 deleteRequired();
+
+
+
+
+///////////////////////////////////
+///////////////////////////////////
+////////////API DADJOKES////// ////
+///////////////////////////////////
+///////////////////////////////////
+const dadjokePelement = document.getElementById('dadjoke');
+const buttonDadjoke = document.getElementById('buttonDadjoke');
+
+generateJoke();
+
+async function generateJoke() {
+	const jokeRes = await fetch('https://icanhazdadjoke.com/', {
+		headers: {
+			'Accept': 'application/json'
+		}
+	});
+	const joke = await jokeRes.json();
+	dadjokePelement.innerHTML = joke.joke;
+}
+
+buttonDadjoke.addEventListener('click', generateJoke);
